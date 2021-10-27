@@ -36,4 +36,20 @@
             return "Square/Blue";
         }
     }
+
+    public class GreenCircle : Shape
+    {
+        public override string Draw()
+        {
+            return "Circle/Green";
+        }
+    }
+
+    public class GreenSquare : Shape
+    {
+        public override string Draw()
+        {
+            return "Square/Green";
+        }
+    }
 }

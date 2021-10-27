@@ -28,6 +28,12 @@ namespace bridge
 
             Shape blueSquare = new BlueSquare();
             client.Render(blueSquare);
+
+            Shape greenCircle = new GreenCircle();
+            client.Render(greenCircle);
+
+            Shape greenSquare = new GreenSquare();
+            client.Render(greenSquare);
         }
     }
 }
