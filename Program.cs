@@ -17,11 +17,17 @@ namespace bridge
         {
             Consumer client = new();
 
-            Shape circle = new Cirlce();
-            client.Render(circle);
+            Shape redCircle = new RedCirlce();
+            client.Render(redCircle);
 
-            Shape square = new Square();
-            client.Render(square);
+            Shape redSquare = new RedSquare();
+            client.Render(redSquare);
+
+            Shape blueCircle = new BlueCircle();
+            client.Render(blueCircle);
+
+            Shape blueSquare = new BlueSquare();
+            client.Render(blueSquare);
         }
     }
 }
