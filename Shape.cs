@@ -1,55 +1,40 @@
 ﻿namespace bridge
 {
-    public abstract class Shape
+    // "Abstraction"
+    public class Shape
     {
-        public abstract string Draw();
-    }
+        protected IColor myColor;
 
-    public class RedCirlce : Shape
-    {
-        public override string Draw()
+        public Shape(IColor color)
         {
-            return "Circle/Red";
+            myColor = color;
+        }
+
+        public virtual string Draw()
+        {
+            return "Shape/" + myColor.Draw();
         }
     }
 
-    public class RedSquare : Shape
+    // "Refined Abstraction"
+    public class Circle : Shape
     {
+        public Circle(IColor color) : base(color) {}
+
         public override string Draw()
         {
-            return "Square/Red";
+            return "Circle/" + myColor.Draw();
         }
     }
 
-    public class BlueCircle : Shape
+    // "Refined Abstraction"
+    public class Square : Shape
     {
-        public override string Draw()
-        {
-            return "Circle/Blue";
-        }
-    }
+        public Square(IColor color) : base(color) {}
 
-    public class BlueSquare : Shape
-    {
         public override string Draw()
         {
-            return "Square/Blue";
-        }
-    }
-
-    public class GreenCircle : Shape
-    {
-        public override string Draw()
-        {
-            return "Circle/Green";
-        }
-    }
-
-    public class GreenSquare : Shape
-    {
-        public override string Draw()
-        {
-            return "Square/Green";
+            return "Square/" + myColor.Draw();
         }
     }
 }

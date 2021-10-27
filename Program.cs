@@ -17,22 +17,22 @@ namespace bridge
         {
             Consumer client = new();
 
-            Shape redCircle = new RedCirlce();
+            Shape redCircle = new Circle(new Red());
             client.Render(redCircle);
 
-            Shape redSquare = new RedSquare();
+            Shape redSquare = new Square(new Red());
             client.Render(redSquare);
 
-            Shape blueCircle = new BlueCircle();
+            Shape blueCircle = new Circle(new Blue());
             client.Render(blueCircle);
 
-            Shape blueSquare = new BlueSquare();
+            Shape blueSquare = new Square(new Blue());
             client.Render(blueSquare);
 
-            Shape greenCircle = new GreenCircle();
+            Shape greenCircle = new Circle(new Green());
             client.Render(greenCircle);
 
-            Shape greenSquare = new GreenSquare();
+            Shape greenSquare = new Square(new Green());
             client.Render(greenSquare);
         }
     }
