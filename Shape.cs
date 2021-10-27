@@ -5,19 +5,35 @@
         public abstract string Draw();
     }
 
-    public class Cirlce : Shape
+    public class RedCirlce : Shape
     {
         public override string Draw()
         {
-            return "Circle";
+            return "Circle/Red";
         }
     }
 
-    public class Square : Shape
+    public class RedSquare : Shape
     {
         public override string Draw()
         {
-            return "Square";
+            return "Square/Red";
+        }
+    }
+
+    public class BlueCircle : Shape
+    {
+        public override string Draw()
+        {
+            return "Circle/Blue";
+        }
+    }
+
+    public class BlueSquare : Shape
+    {
+        public override string Draw()
+        {
+            return "Square/Blue";
         }
     }
 }
